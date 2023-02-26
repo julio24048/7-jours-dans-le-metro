@@ -23,7 +23,7 @@ def requete_lignes () :
         #envoi de la requete et traitement du retour
         try : 
             url = 'https://prim.iledefrance-mobilites.fr/marketplace/general-message?LineRef=STIF%3ALine%3A%3A'+codes_lignes[i]+'%3A&InfoChannelRef=Perturbation'
-            headers = {'Accept': 'application/json','apikey': 'YLqkwzUeMRT43lUTWaDIKP41LZAG7eAx'}
+            headers = {'Accept': 'application/json','apikey': 'votre_clé_api'}
             req = requests.get(url, headers=headers)
             #si tout se passe bien on traite les résultats
             if (req.status_code == 200) :
